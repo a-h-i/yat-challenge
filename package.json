@@ -1,0 +1,19 @@
+{
+  "name": "yat-challenge",
+  "version": "0.0.1",
+  "description": "A coding challenge for Yat Candidates",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krakaw/yat-challenge.git"
+  },
+  "author": "Krakaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krakaw/yat-challenge/issues"
+  },
+  "homepage": "https://github.com/Krakaw/yat-challenge#readme"
+}
