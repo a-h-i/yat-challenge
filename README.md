@@ -40,3 +40,11 @@ Add a new payment address for the provided Yat.
 
 * Only fetch, display and update data for CryptoCurrency Addresses `0x10**` and not Crypto Tokens `0x63**`.
 * An `emoji_id` is equivalent to a `Yat`
+
+### What we're looking for
+
+* Clean code
+* Comments (where they make sense)
+* Use of libraries (no need to re-invent the wheel)
+* Commit history, commit often to show your thought process
+* Tests are a plus
