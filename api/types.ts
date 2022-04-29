@@ -15,6 +15,11 @@ export class PaymentAddress {
     this.name = nameFromCategory(category);
   }
 
+  toString() {
+    return `Currency: ${this.name}
+address: ${this.address}`
+  }
+
   static fromPaymentAddressResponse(paymentAddress: PaymentAddressResponse) {
     return new PaymentAddress(paymentAddress.category, paymentAddress.address);
   }
