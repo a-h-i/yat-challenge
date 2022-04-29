@@ -12,6 +12,6 @@ export const MAX_YAT_LENGTH = Number.parseInt(process.env.MAX_YAT_LENGTH || '4',
 const YAT_REGEX = RegExp(`^[${data.emojis.join('')}]+$`, 'u')
 
 export function isValidYat(yat: Yat) {
-  const yatLength = [...yat].length; // iterable protocol splits it into code points instead of count if UTF-16 units (default in js)
+  const yatLength = [...yat].length; // iterable protocol splits it into code points instead of count of UTF-16 units (default in js)
   return  yatLength >= MIN_YAT_LENGTH && yatLength <= MAX_YAT_LENGTH && YAT_REGEX.test(yat);
 }
