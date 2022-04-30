@@ -29,6 +29,9 @@ To add a bitcoin address `npx ts-node index.ts append --yat ☠️🐙☠️  -c
 
 For additional usage and help use `npx ts-node index.js query --help` or `npx ts-node index.js append --help`
 
+## Note
+
+In your env file make sure you use the base url for API_URL i.e `https://demo-yc.scratch.emojid.me/` not `https://demo-yc.scratch.emojid.me/api`.
 
 ## Summary
 
