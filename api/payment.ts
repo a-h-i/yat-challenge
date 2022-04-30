@@ -33,7 +33,7 @@ export async function lookupAddress(yat: Yat, currency?: string) {
 }
 
 /**
- * 
+ * Adds a payment address
  * @param yat emojiid
  * @param currency currency tag not name
  * @param address crypto address

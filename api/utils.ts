@@ -22,6 +22,10 @@ export function isValidCurrency(currency: string) {
   return currencies.includes(currency.toLowerCase());
 }
 
+export function isValidCurrencyTag(tag: string) {
+  return data.addresses.hasOwnProperty(tag);
+}
+
 export function tagFromCurrencyName(currency: string) {
   for( const [key, value] of Object.entries(data.addresses)) {
     if(value.toLowerCase() === currency.toLowerCase()) {

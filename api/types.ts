@@ -19,7 +19,8 @@ export class PaymentAddress {
 
   toString() {
     return `Currency: ${this.name}
-address: ${this.address}`
+address: ${this.address}
+description: ${this.description ? this.description : ''}`
   }
 
   static fromPaymentAddressResponse(paymentAddress: PaymentAddressResponse) {
