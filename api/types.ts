@@ -3,6 +3,7 @@ import { nameFromCategory } from "./utils";
 export interface PaymentAddressResponse {
   address: string;
   category: string;
+  description?: string;
 }
 
 export class PaymentAddress {
@@ -11,6 +12,7 @@ export class PaymentAddress {
   constructor(
     public category: string,
     public address: string,
+    public description?: string
   ) {
     this.name = nameFromCategory(category);
   }
@@ -21,7 +23,7 @@ address: ${this.address}`
   }
 
   static fromPaymentAddressResponse(paymentAddress: PaymentAddressResponse) {
-    return new PaymentAddress(paymentAddress.category, paymentAddress.address);
+    return new PaymentAddress(paymentAddress.category, paymentAddress.address, paymentAddress.description);
   }
 }
 
