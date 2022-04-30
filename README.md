@@ -1,5 +1,35 @@
 # Yat Coding Challenge
 
+
+
+# Usage Instructions
+
+Install dependencies and compile typescript
+```bash
+npm install
+npm run build
+```
+
+In order to run test suite use `npm run test` no need to build before testing.
+
+If you want to run the application either use ts-node via `npx ts-node index.js <commands>` or `npm run start -- <commands>` if using the npm run style make sure you build first.
+
+Ensure that you have provided a proper .env file before running the application or tests.
+
+Provided commands
+```bash
+query # fetches payment addresses
+append # adds a new payment address
+```
+
+To query a yat's payment addresses use `npx ts-node index.js query --yat ☠️🐙☠️`.
+You can filter by currency name i.e `npx ts-node index.js query --yat ☠️🐙☠️ -c Bitcoin Address`
+
+To add a bitcoin address `npx ts-node index.ts append --yat ☠️🐙☠️  -c TRON -a DHKM6NDUUv9kaHAGi1QU7MRBNKfQiAdP3F`
+
+For additional usage and help use `npx ts-node index.js query --help` or `npx ts-node index.js append --help`
+
+
 ## Summary
 
 Using Javascript / Typescript, create a CLI app that looks up Yat payment addresses, and additionally allows the user to set new payment addresses.
